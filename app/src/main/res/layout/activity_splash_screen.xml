@@ -21,6 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/logo"
-        android:src="@drawable/logo-QS.png" />
+        android:src="@drawable/logo" />
 
 </LinearLayout>
