@@ -1,18 +1,21 @@
 <resources>
-    <string name="app_name">Top Quiz</string>
+    <string name="app_name">QS AppLab</string>
     <string name="welcome_what_s_your_name">Salut ! Quel est votre prénom</string>
     <string name="please_type_your_name">Entrez votre prénom</string>
     <string name="let_s_play">Lancer le quiz</string>
-    <string name="question">Question?</string>
+    <string name="question">Question ?</string>
     <string name="logo">Logo</string>
-    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="title_activity_drawer">Mon Labo</string>
     <string name="navigation_drawer_open">Ouvrir le Menu</string>
     <string name="navigation_drawer_close">Fermer le Menu</string>
     <string name="nav_header_title">Ma première App Android</string>
     <string name="nav_header_subtitle">Quantical Solutions Mobile</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Paramètres</string>
+    <string name="offline_message">Tu n\'es pas connecté...</string>
 
-    <string name="mon_jeu">Mon jeu</string>
-    <string name="documentation">Documentation</string>
+    <string name="accueil">Pas à pas</string>
+    <string name="mon_jeu">Mon quiz</string>
+    <string name="documentation">GitHub</string>
+    <string name="gps">GPS</string>
 </resources>

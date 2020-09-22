@@ -1,4 +1,4 @@
-package com.quantical.topquizz.model;
+package com.quantical.android_experience.models;
 
 public class User {
 

@@ -1,4 +1,4 @@
-package com.quantical.topquizz.controller;
+package com.quantical.android_experience.controllers;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,9 +12,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.quantical.topquizz.R;
-import com.quantical.topquizz.model.Question;
-import com.quantical.topquizz.model.QuestionBank;
+import com.quantical.android_experience.R;
+import com.quantical.android_experience.models.Question;
+import com.quantical.android_experience.models.QuestionBank;
 
 import java.util.Arrays;
 

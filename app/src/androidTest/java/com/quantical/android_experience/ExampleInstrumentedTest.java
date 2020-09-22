@@ -1,4 +1,4 @@
-package com.quantical.topquizz;
+package com.quantical.android_experience;
 
 import android.content.Context;
 

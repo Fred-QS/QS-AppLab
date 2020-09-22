@@ -1,4 +1,4 @@
-package com.quantical.topquizz.controller;
+package com.quantical.android_experience.controllers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.quantical.topquizz.R;
+import com.quantical.android_experience.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -29,7 +29,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(SplashScreenActivity.this, DrawerActivity.class);
+                Intent i = new Intent(SplashScreenActivity.this, MainActivity.class);
                 startActivity(i);
 
                 // close this activity

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#191919"
-    tools:context=".controller.SplashScreenActivity">
+    tools:context=".controllers.SplashScreenActivity">
 
     <TextView
         android:textSize="50sp"
