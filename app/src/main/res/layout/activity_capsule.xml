@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
-    tools:context=".controller.SplashScreenActivity">
+    tools:context=".controller.CapsuleActivity">
 
-    <ImageView
+    <WebView
+        android:id="@+id/activity_capsule_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/ic_launcher_background" />
+        />
 
 </LinearLayout>

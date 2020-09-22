@@ -3,4 +3,6 @@
     <string name="welcome_what_s_your_name">Welcome! What\'s your name?</string>
     <string name="please_type_your_name">Please type your name</string>
     <string name="let_s_play">Let\'s play</string>
+    <string name="question">Question?</string>
+    <string name="logo">Logo</string>
 </resources>

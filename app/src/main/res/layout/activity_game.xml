@@ -20,7 +20,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:text="Question?"/>
+        android:text="@string/question"/>
 
     <Button
         android:id="@+id/activity_game_answer1_btn"
