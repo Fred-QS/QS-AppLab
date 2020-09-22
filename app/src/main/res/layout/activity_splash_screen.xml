@@ -5,13 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
+    android:background="#191919"
     tools:context=".controller.SplashScreenActivity">
+
+    <TextView
+        android:textSize="50sp"
+        android:textColor="#F7F7F7"
+        android:textAlignment="center"
+        android:text="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="70dp"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/logo"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/logo-QS.png" />
 
 </LinearLayout>
