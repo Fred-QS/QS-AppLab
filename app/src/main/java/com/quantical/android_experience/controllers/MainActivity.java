@@ -27,7 +27,6 @@ import static java.lang.System.out;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static boolean isOnline;
     private AppBarConfiguration mAppBarConfiguration;
     private WebView mWebView;
 
@@ -71,17 +70,12 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_accueil, R.id.nav_jeu, R.id.nav_documentation)
+                R.id.nav_accueil, R.id.nav_jeu, R.id.nav_documentation, R.id.nav_maps)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-    }
-
-    public boolean getConnexion() {
-
-        return isOnline;
     }
 
     @Override
@@ -117,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivity == null) {
             Log.d("NetworkCheck", "isNetworkAvailable: No");
-            isOnline = false;
             return false;
         }
 
@@ -131,12 +124,10 @@ public class MainActivity extends AppCompatActivity {
                 // check this interface for a connected state
                 if (info[i].getState() == NetworkInfo.State.CONNECTED) {
                     Log.d("NetworkCheck", "isNetworkAvailable: Yes");
-                    isOnline = true;
                     return true;
                 }
             }
         }
-        isOnline = false;
         return false;
     }
 
