@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +49,7 @@ public class MapsFragment extends Fragment {
         return root;
     }
 
-    /*@Override
+    @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
         super.onViewCreated(view, savedInstanceState);
@@ -59,6 +60,10 @@ public class MapsFragment extends Fragment {
         if (mapFragment != null) {
 
             mapFragment.getMapAsync(callback);
+
+        } else {
+
+            Log.d("Fragment", "Not set");
         }
-    }*/
+    }
 }

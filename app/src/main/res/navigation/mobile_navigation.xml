@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_documentation" />
 
     <fragment
-        android:id="@+id/map"
+        android:id="@+id/nav_maps"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:label="@string/gps"
         tools:layout="@layout/fragment_maps"  />
