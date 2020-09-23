@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,19 +7,245 @@
     android:orientation="vertical"
     tools:context=".views.AccueilFragment">
 
-    <TextView
-        android:id="@+id/text_accueil"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:background="#3C3C3C">
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/text_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="@string/accueil_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ======== Chapitre 1 : EmptyActivity ======== -->
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_title_ch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/alt_accueil"
+                android:src="@drawable/empty_activity" />
+
+            <TextView
+                android:textColor="#F7F7F7"
+                android:id="@+id/accueil_side_ch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_ch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <!-- === Chapitre 2 : NavigationDrawerActivity === -->
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_title_ch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/alt_accueil"
+                android:src="@drawable/navigation_drawer_activity" />
+
+            <TextView
+                android:textColor="#F7F7F7"
+                android:id="@+id/accueil_side_ch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_ch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <!-- ======== Chapitre 3 : MapsAcitvity ======== -->
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_title_ch3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/alt_accueil"
+                android:src="@drawable/maps_acitvity" />
+
+            <TextView
+                android:textColor="#F7F7F7"
+                android:id="@+id/accueil_side_ch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_ch3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <!-- ====== Chapitre 4 : SettingsActivity ====== -->
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_title_ch4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/alt_accueil"
+                android:src="@drawable/settings_activity" />
+
+            <TextView
+                android:textColor="#F7F7F7"
+                android:id="@+id/accueil_side_ch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_ch4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <!-- ======== Chapitre 5 : LoginActivity ======== -->
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_title_ch5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/alt_accueil"
+                android:src="@drawable/login_activity" />
+
+            <TextView
+                android:textColor="#F7F7F7"
+                android:id="@+id/accueil_side_ch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_ch5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <!-- ======== Chapitre 6 : MobAdsActivity ======== -->
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_title_ch6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/alt_accueil"
+                android:src="@drawable/mob_ads_activity" />
+
+            <TextView
+                android:textColor="#F7F7F7"
+                android:id="@+id/accueil_side_ch6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#F7F7F7"
+            android:id="@+id/accueil_ch6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>

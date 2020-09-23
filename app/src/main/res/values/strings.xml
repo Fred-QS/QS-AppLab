@@ -18,4 +18,6 @@
     <string name="mon_jeu">Mon quiz</string>
     <string name="documentation">GitHub</string>
     <string name="gps">GPS</string>
+    <string name="alt_accueil">activity</string>
+    <string name="accueil_title">Liste des activités que tu vas implémenter</string>
 </resources>
