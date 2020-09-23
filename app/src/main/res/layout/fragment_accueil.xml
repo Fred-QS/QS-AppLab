@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#3C3C3C">
+        android:paddingBottom="85dp"
+        android:background="#2D2D2D">
 
         <TextView
             android:textColor="#F7F7F7"
@@ -19,10 +20,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
             android:text="@string/accueil_title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,216 +37,252 @@
         <TextView
             android:textColor="#F7F7F7"
             android:id="@+id/accueil_title_ch1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textlines"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/emptyactivity"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:layout_gravity="center"
+                android:layout_gravity="top"
+                android:paddingTop="5dp"
                 android:contentDescription="@string/alt_accueil"
                 android:src="@drawable/empty_activity" />
 
             <TextView
                 android:textColor="#F7F7F7"
                 android:id="@+id/accueil_side_ch1"
+                android:textSize="12sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-
-        <TextView
-            android:textColor="#F7F7F7"
-            android:id="@+id/accueil_ch1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
 
         <!-- === Chapitre 2 : NavigationDrawerActivity === -->
 
         <TextView
             android:textColor="#F7F7F7"
             android:id="@+id/accueil_title_ch2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="textEnd"
+            android:background="@drawable/textlines"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/navigationdraweractivity"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:layout_gravity="center"
+                android:layout_gravity="top"
+                android:paddingTop="5dp"
                 android:contentDescription="@string/alt_accueil"
                 android:src="@drawable/navigation_drawer_activity" />
 
             <TextView
                 android:textColor="#F7F7F7"
                 android:id="@+id/accueil_side_ch2"
+                android:textSize="12sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-
-        <TextView
-            android:textColor="#F7F7F7"
-            android:id="@+id/accueil_ch2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
 
         <!-- ======== Chapitre 3 : MapsAcitvity ======== -->
 
         <TextView
             android:textColor="#F7F7F7"
             android:id="@+id/accueil_title_ch3"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textlines"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/mapsacitvity"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:layout_gravity="center"
+                android:layout_gravity="top"
+                android:paddingTop="5dp"
                 android:contentDescription="@string/alt_accueil"
                 android:src="@drawable/maps_acitvity" />
 
             <TextView
                 android:textColor="#F7F7F7"
                 android:id="@+id/accueil_side_ch3"
+                android:textSize="12sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-
-        <TextView
-            android:textColor="#F7F7F7"
-            android:id="@+id/accueil_ch3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
 
         <!-- ====== Chapitre 4 : SettingsActivity ====== -->
 
         <TextView
             android:textColor="#F7F7F7"
             android:id="@+id/accueil_title_ch4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textlines"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/settingsactivity"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:layout_gravity="center"
+                android:layout_gravity="top"
+                android:paddingTop="5dp"
                 android:contentDescription="@string/alt_accueil"
                 android:src="@drawable/settings_activity" />
 
             <TextView
                 android:textColor="#F7F7F7"
                 android:id="@+id/accueil_side_ch4"
+                android:textSize="12sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-
-        <TextView
-            android:textColor="#F7F7F7"
-            android:id="@+id/accueil_ch4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
 
         <!-- ======== Chapitre 5 : LoginActivity ======== -->
 
         <TextView
             android:textColor="#F7F7F7"
             android:id="@+id/accueil_title_ch5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textlines"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/loginactivity"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:layout_gravity="center"
+                android:layout_gravity="top"
+                android:paddingTop="5dp"
                 android:contentDescription="@string/alt_accueil"
                 android:src="@drawable/login_activity" />
 
             <TextView
                 android:textColor="#F7F7F7"
                 android:id="@+id/accueil_side_ch5"
+                android:textSize="12sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-
-        <TextView
-            android:textColor="#F7F7F7"
-            android:id="@+id/accueil_ch5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
 
         <!-- ======== Chapitre 6 : MobAdsActivity ======== -->
 
         <TextView
             android:textColor="#F7F7F7"
             android:id="@+id/accueil_title_ch6"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/textlines"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="@string/mobadsactivity"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="120dp"
-                android:layout_gravity="center"
+                android:layout_gravity="top"
+                android:paddingTop="5dp"
                 android:contentDescription="@string/alt_accueil"
                 android:src="@drawable/mob_ads_activity" />
 
             <TextView
                 android:textColor="#F7F7F7"
                 android:id="@+id/accueil_side_ch6"
+                android:textSize="12sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-
-        <TextView
-            android:textColor="#F7F7F7"
-            android:id="@+id/accueil_ch6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
 
     </LinearLayout>
 
