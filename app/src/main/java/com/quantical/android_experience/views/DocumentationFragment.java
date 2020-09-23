@@ -44,7 +44,7 @@ public class DocumentationFragment extends Fragment {
 
                 WebSettings webSettings = mWebView.getSettings();
                 webSettings.setJavaScriptEnabled(true);
-                mWebView.loadUrl("https://github.com/Fred-QS/Android-TopQuizz");
+                mWebView.loadUrl("https://github.com/Fred-QS/QS-AppLab");
                 mWebView.setWebViewClient(new WebViewClient() {
 
                     @Override
